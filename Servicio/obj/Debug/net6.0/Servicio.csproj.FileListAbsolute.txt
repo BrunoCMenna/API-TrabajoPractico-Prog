@@ -1,0 +1,15 @@
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\bin\Debug\net6.0\Servicio.deps.json
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\bin\Debug\net6.0\Servicio.dll
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\bin\Debug\net6.0\Servicio.pdb
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\bin\Debug\net6.0\Modelo.dll
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\bin\Debug\net6.0\Modelo.pdb
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\obj\Debug\net6.0\Servicio.csproj.AssemblyReference.cache
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\obj\Debug\net6.0\Servicio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\obj\Debug\net6.0\Servicio.AssemblyInfoInputs.cache
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\obj\Debug\net6.0\Servicio.AssemblyInfo.cs
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\obj\Debug\net6.0\Servicio.csproj.CoreCompileInputs.cache
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\obj\Debug\net6.0\Servicio.csproj.CopyComplete
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\obj\Debug\net6.0\Servicio.dll
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\obj\Debug\net6.0\refint\Servicio.dll
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\obj\Debug\net6.0\Servicio.pdb
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\obj\Debug\net6.0\ref\Servicio.dll

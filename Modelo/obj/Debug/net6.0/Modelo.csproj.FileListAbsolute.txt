@@ -1,0 +1,14 @@
+C:\Facultad\Programacion III\API-TrabajoPractico\Modelo\bin\Debug\net6.0\Modelo.deps.json
+C:\Facultad\Programacion III\API-TrabajoPractico\Modelo\bin\Debug\net6.0\Modelo.runtimeconfig.json
+C:\Facultad\Programacion III\API-TrabajoPractico\Modelo\bin\Debug\net6.0\Modelo.dll
+C:\Facultad\Programacion III\API-TrabajoPractico\Modelo\bin\Debug\net6.0\Modelo.pdb
+C:\Facultad\Programacion III\API-TrabajoPractico\Modelo\obj\Debug\net6.0\Modelo.csproj.AssemblyReference.cache
+C:\Facultad\Programacion III\API-TrabajoPractico\Modelo\obj\Debug\net6.0\Modelo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Facultad\Programacion III\API-TrabajoPractico\Modelo\obj\Debug\net6.0\Modelo.AssemblyInfoInputs.cache
+C:\Facultad\Programacion III\API-TrabajoPractico\Modelo\obj\Debug\net6.0\Modelo.AssemblyInfo.cs
+C:\Facultad\Programacion III\API-TrabajoPractico\Modelo\obj\Debug\net6.0\Modelo.csproj.CoreCompileInputs.cache
+C:\Facultad\Programacion III\API-TrabajoPractico\Modelo\obj\Debug\net6.0\Modelo.dll
+C:\Facultad\Programacion III\API-TrabajoPractico\Modelo\obj\Debug\net6.0\refint\Modelo.dll
+C:\Facultad\Programacion III\API-TrabajoPractico\Modelo\obj\Debug\net6.0\Modelo.pdb
+C:\Facultad\Programacion III\API-TrabajoPractico\Modelo\obj\Debug\net6.0\Modelo.genruntimeconfig.cache
+C:\Facultad\Programacion III\API-TrabajoPractico\Modelo\obj\Debug\net6.0\ref\Modelo.dll
