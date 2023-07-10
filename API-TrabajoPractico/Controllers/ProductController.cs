@@ -19,7 +19,7 @@ namespace API_TrabajoPractico.Controllers
         }
 
         [HttpGet("GetProducts")]
-        public ActionResult<List<Product>> GetProducts()
+        public ActionResult<List<ProductDTO>> GetProducts()
         {
             try
             {
@@ -43,6 +43,10 @@ namespace API_TrabajoPractico.Controllers
             try
             {
                 var response = _service.GetProductById(id);
+                if (response == null)
+                {
+                    return NotFound($"Product with ID {id} not found");
+                }
                 return Ok(response);
             }
             catch (Exception ex)

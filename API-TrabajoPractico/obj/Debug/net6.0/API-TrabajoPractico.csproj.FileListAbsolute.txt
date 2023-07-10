@@ -66,3 +66,4 @@ C:\Facultad\Programacion III\API-TrabajoPractico\API-TrabajoPractico\obj\Debug\n
 C:\Facultad\Programacion III\API-TrabajoPractico\API-TrabajoPractico\obj\Debug\net6.0\API-TrabajoPractico.genruntimeconfig.cache
 C:\Facultad\Programacion III\API-TrabajoPractico\API-TrabajoPractico\obj\Debug\net6.0\ref\API-TrabajoPractico.dll
 C:\Facultad\Programacion III\API-TrabajoPractico\API-TrabajoPractico\bin\Debug\net6.0\AutoMapper.dll
+C:\Facultad\Programacion III\API-TrabajoPractico\API-TrabajoPractico\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

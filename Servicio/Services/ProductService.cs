@@ -33,7 +33,7 @@ namespace Servicio.Services
             var product = _context.Product.Where(w => w.Id == id).FirstOrDefault();
             if (product == null)
             {
-                throw new Exception($"Product with ID {id} doesn't exist");
+                return null;
             }
             return _mapper.Map<ProductDTO>(product);
         }
