@@ -15,6 +15,6 @@ namespace Servicio.IServices
         ProductDTO GetProductById(int id);
         ProductDTO AddNewProduct(ProductViewModel product);
         ProductDTO UpdateProduct(int id, ProductViewModel product);
-        void DeleteProduct(int id);
+        string DeleteProduct(int id);
     }
 }

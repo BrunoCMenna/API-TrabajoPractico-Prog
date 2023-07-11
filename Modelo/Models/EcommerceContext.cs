@@ -20,6 +20,7 @@ namespace Modelo.Models
         }
 
         public virtual DbSet<Order> Order { get; set; }
+        public virtual DbSet<OrderItem> OrderItem { get; set; }
         public virtual DbSet<Product> Product { get; set; }
         public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<User> User { get; set; }
@@ -27,6 +28,7 @@ namespace Modelo.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new Configurations.OrderConfiguration());
+            modelBuilder.ApplyConfiguration(new Configurations.OrderItemConfiguration());
             modelBuilder.ApplyConfiguration(new Configurations.ProductConfiguration());
             modelBuilder.ApplyConfiguration(new Configurations.RoleConfiguration());
             modelBuilder.ApplyConfiguration(new Configurations.UserConfiguration());

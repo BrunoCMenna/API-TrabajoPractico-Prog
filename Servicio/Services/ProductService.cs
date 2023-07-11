@@ -62,7 +62,7 @@ namespace Servicio.Services
 
             if (existingProduct == null)
             {
-                throw new Exception($"Product with ID {id} doesn't exist");
+                return null;
             }
 
             existingProduct.Brand = product.Brand;
@@ -76,18 +76,18 @@ namespace Servicio.Services
             return _mapper.Map<ProductDTO>(_context.Product.Where(w => w.Id == id).First());
         }
 
-        public void DeleteProduct(int id)
+        public string DeleteProduct(int id)
         {
             var product = _context.Product.FirstOrDefault(p => p.Id == id);
             if (product == null)
             {
-                throw new Exception($"Product with ID {id} doesn't exist");
-            } else
-            {
-                _context.Product.Remove(_context.Product.Single(s => s.Id == id));
-                _context.SaveChanges();
+                return null;
             }
-            
+
+            _context.Product.Remove(_context.Product.Single(s => s.Id == id));
+            _context.SaveChanges();
+
+            return $"Product ID {id} succesfully deleted";
         }
     }
 }

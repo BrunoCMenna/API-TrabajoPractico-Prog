@@ -17,6 +17,7 @@ builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IPublicUserService, PublicUserService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 
 //JWT Configuration
 var appSettingsSection = builder.Configuration.GetSection("AppSettings");

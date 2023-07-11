@@ -26,7 +26,7 @@ namespace API_TrabajoPractico.Controllers
                 var response = _service.GetProducts();
                 if (response.Count == 0)
                 {
-                    NotFound("No hay ningún producto");
+                    NotFound("There are no products on the database.");
                 }
 
                 return Ok(response);
@@ -79,6 +79,11 @@ namespace API_TrabajoPractico.Controllers
             try
             {
                 var response = _service.UpdateProduct(id, product);
+                if (response == null)
+                {
+                    return NotFound($"Product with ID {id} not found");
+                }
+
                 string baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.ToUriComponent()}";
                 string apiAndEndpointUrl = $"api/Product/GetProductById";
                 string locationUrl = $"{baseUrl}/{apiAndEndpointUrl}/{id}";
@@ -91,12 +96,16 @@ namespace API_TrabajoPractico.Controllers
         }
 
         [HttpDelete("DeleteProduct/{id}")]
-        public ActionResult DeleteProduct([FromRoute] int id)
+        public ActionResult<string> DeleteProduct([FromRoute] int id)
         {
             try
             {
-                _service.DeleteProduct(id);
-                return Ok();
+                var response = _service.DeleteProduct(id);
+                if (response == null)
+                {
+                    return NotFound($"Product with ID {id} not found");
+                }
+                return Ok(response);
             }
             catch (Exception ex)
             {

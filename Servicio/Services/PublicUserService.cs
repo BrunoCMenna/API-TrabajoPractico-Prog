@@ -42,7 +42,7 @@ namespace Servicio.Services
             user.Password = newPassword.GetSHA256();
             _context.SaveChanges();
 
-            return "Password changed successfully";
+            return "Password change successful";
         }
 
         public UserDTO ChangeInfo(ChangeInfoViewModel model, int userId)

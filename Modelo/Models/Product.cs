@@ -9,7 +9,7 @@ namespace Modelo.Models
     {
         public Product()
         {
-            Order = new HashSet<Order>();
+            OrderItem = new HashSet<OrderItem>();
         }
 
         public int Id { get; set; }
@@ -20,6 +20,6 @@ namespace Modelo.Models
         public string Description { get; set; }
         public decimal Price { get; set; }
 
-        public virtual ICollection<Order> Order { get; set; }
+        public virtual ICollection<OrderItem> OrderItem { get; set; }
     }
 }

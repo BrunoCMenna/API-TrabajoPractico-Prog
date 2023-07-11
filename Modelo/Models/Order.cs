@@ -2,22 +2,27 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace Modelo.Models
 {
     public partial class Order
     {
-        public int OrderId { get; set; }
-        public int UserId { get; set; }
-        public int ProductId { get; set; }
-        public int Quantity { get; set; }
-        public string Address { get; set; }
-        public string Province { get; set; }
-        public string City { get; set; }
-        public string ZipCode { get; set; }
-        public DateTime OrderDate { get; set; }
+        public Order()
+        {
+            OrderItem = new HashSet<OrderItem>();
+        }
 
-        public virtual Product Product { get; set; }
+        public int Id { get; set; }
+        public int UserId { get; set; }
+        public string ShippingAddress { get; set; }
+        public string ZipCode { get; set; }
+        public decimal OrderTotal { get; set; }
+        public DateTime OrderDate { get; set; }
+        public string OrderStatus { get; set; }
+
+        [JsonIgnore]
         public virtual User User { get; set; }
+        public virtual ICollection<OrderItem> OrderItem { get; set; }
     }
 }

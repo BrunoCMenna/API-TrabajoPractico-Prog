@@ -12,46 +12,38 @@ namespace Modelo.Models.Configurations
     {
         public void Configure(EntityTypeBuilder<Order> entity)
         {
-            entity.HasKey(e => new { e.OrderId, e.UserId, e.ProductId })
-                .HasName("PK__Order__598583247F25B9C7");
-
-            entity.Property(e => e.OrderId).HasColumnName("order_id");
-
-            entity.Property(e => e.UserId).HasColumnName("user_id");
-
-            entity.Property(e => e.ProductId).HasColumnName("product_id");
-
-            entity.Property(e => e.Address)
-                .IsRequired()
-                .HasColumnName("address");
-
-            entity.Property(e => e.City).HasColumnName("city");
+            entity.Property(e => e.Id).HasColumnName("id");
 
             entity.Property(e => e.OrderDate)
                 .HasColumnType("datetime")
                 .HasColumnName("order_date");
 
-            entity.Property(e => e.Province)
+            entity.Property(e => e.OrderStatus)
                 .IsRequired()
-                .HasColumnName("province");
+                .HasMaxLength(50)
+                .HasColumnName("order_status");
 
-            entity.Property(e => e.Quantity).HasColumnName("quantity");
+            entity.Property(e => e.OrderTotal)
+                .HasColumnType("decimal(18, 0)")
+                .HasColumnName("order_total");
+
+            entity.Property(e => e.ShippingAddress)
+                .IsRequired()
+                .HasMaxLength(250)
+                .HasColumnName("shipping_address");
+
+            entity.Property(e => e.UserId).HasColumnName("user_id");
 
             entity.Property(e => e.ZipCode)
                 .IsRequired()
+                .HasMaxLength(50)
                 .HasColumnName("zip_code");
-
-            entity.HasOne(d => d.Product)
-                .WithMany(p => p.Order)
-                .HasForeignKey(d => d.ProductId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Order__product_i__59FA5E80");
 
             entity.HasOne(d => d.User)
                 .WithMany(p => p.Order)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Order__user_id__59063A47");
+                .HasConstraintName("FK__Order__user_id__05D8E0BE");
 
             OnConfigurePartial(entity);
         }
