@@ -67,3 +67,7 @@ C:\Facultad\Programacion III\API-TrabajoPractico\API-TrabajoPractico\obj\Debug\n
 C:\Facultad\Programacion III\API-TrabajoPractico\API-TrabajoPractico\obj\Debug\net6.0\ref\API-TrabajoPractico.dll
 C:\Facultad\Programacion III\API-TrabajoPractico\API-TrabajoPractico\bin\Debug\net6.0\AutoMapper.dll
 C:\Facultad\Programacion III\API-TrabajoPractico\API-TrabajoPractico\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Facultad\Programacion III\API-TrabajoPractico\API-TrabajoPractico\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Facultad\Programacion III\API-TrabajoPractico\API-TrabajoPractico\bin\Debug\net6.0\Scrutor.dll
+C:\Facultad\Programacion III\API-TrabajoPractico\API-TrabajoPractico\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Facultad\Programacion III\API-TrabajoPractico\API-TrabajoPractico\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll

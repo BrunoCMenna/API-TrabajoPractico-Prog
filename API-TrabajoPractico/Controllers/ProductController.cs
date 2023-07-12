@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Modelo.DTO;
 using Modelo.Models;
@@ -26,7 +27,7 @@ namespace API_TrabajoPractico.Controllers
                 var response = _service.GetProducts();
                 if (response.Count == 0)
                 {
-                    NotFound("There are no products on the database.");
+                    return NotFound("There are no products on the database.");
                 }
 
                 return Ok(response);
@@ -55,7 +56,21 @@ namespace API_TrabajoPractico.Controllers
             }
         }
 
-        [HttpPost("AddNewProduct")]
+        [HttpGet("GetTopProducts")]
+        public ActionResult<List<TopProductsDTO>> GetTopProducts()
+        {
+            try
+            {
+                var response = _service.GetTopProducts();
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"{ex.Message}");
+            }
+        }
+
+        [HttpPost("AddNewProduct"), Authorize(Roles = "admin")]
         public ActionResult<ProductDTO> AddNewProduct([FromBody] ProductViewModel product)
         {
             try
@@ -73,7 +88,7 @@ namespace API_TrabajoPractico.Controllers
             }
         }
 
-        [HttpPut("UpdateProduct/{id}")]
+        [HttpPut("UpdateProduct/{id}"), Authorize(Roles = "admin")]
         public ActionResult<ProductDTO> UpdateProduct(int id, [FromBody] ProductViewModel product)
         {
             try
@@ -95,7 +110,7 @@ namespace API_TrabajoPractico.Controllers
             }
         }
 
-        [HttpDelete("DeleteProduct/{id}")]
+        [HttpDelete("DeleteProduct/{id}"), Authorize(Roles = "admin")]
         public ActionResult<string> DeleteProduct([FromRoute] int id)
         {
             try

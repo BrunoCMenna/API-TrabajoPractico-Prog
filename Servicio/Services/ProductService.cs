@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Modelo.DTO;
 using Modelo.Models;
 using Modelo.ViewModels;
@@ -36,6 +37,36 @@ namespace Servicio.Services
                 return null;
             }
             return _mapper.Map<ProductDTO>(product);
+        }
+
+        public List<TopProductsDTO> GetTopProducts()
+        {
+            var productQuantities = _context.OrderItem
+                .GroupBy(oi => oi.ProductId)
+                .Select(g => new
+                {
+                    ProductId = g.Key,
+                    TotalQuantity = g.Sum(oi => oi.Quantity)
+                })
+                .ToList();
+
+            var topProducts = productQuantities
+                .Join(_context.Product, tp => tp.ProductId, p => p.Id, (tp, p) => new TopProductsDTO
+                {
+                    ProductId = p.Id,
+                    Brand = p.Brand,
+                    Model = p.Model,
+                    Storage = p.Storage,
+                    Ram = p.Ram,
+                    Description = p.Description,
+                    Price = p.Price,
+                    TotalQuantity = tp.TotalQuantity
+                })
+                .OrderByDescending(tp => tp.TotalQuantity)
+                .Take(3)
+                .ToList();
+
+            return topProducts;
         }
 
         public ProductDTO AddNewProduct(ProductViewModel product)

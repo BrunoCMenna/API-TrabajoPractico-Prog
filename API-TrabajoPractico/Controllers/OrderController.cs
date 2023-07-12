@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Modelo.DTO;
 using Modelo.Models;
 using Modelo.ViewModels;
 using Servicio.IServices;
+using System.Security.Claims;
 
 namespace API_TrabajoPractico.Controllers
 {
@@ -18,7 +20,7 @@ namespace API_TrabajoPractico.Controllers
             _service = service;
         }
 
-        [HttpPost("CreateOrder")]
+        [HttpPost("CreateOrder"), Authorize]
         public ActionResult<OrderDTO> CreateOrder([FromBody] OrderViewModel orderDTO)
         {
             try
@@ -32,7 +34,32 @@ namespace API_TrabajoPractico.Controllers
             }
         }
 
-        [HttpGet("GetOrders")]
+        [HttpGet("GetOrdersByUserId/{id}"), Authorize]
+        public ActionResult<List<OrderDTO>> GetOrdersByUserId([FromRoute] int id)
+        {
+            try
+            {
+                var userId = int.Parse(HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+                if (userId != id)
+                {
+                    return Forbid();
+                }
+
+                var response = _service.GetOrdersByUserId(id);
+                if (response.Count == 0)
+                {
+                    return NotFound($"User ID {id} has no orders.");
+                }
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"{ex.Message}");
+            }
+        }
+
+        [HttpGet("GetOrders"), Authorize(Roles = "admin")]
         public ActionResult<List<OrderDTO>> GetOrders()
         {
             try
@@ -46,25 +73,7 @@ namespace API_TrabajoPractico.Controllers
             }
         }
 
-        [HttpGet("GetOrdersByUserId/{id}")]
-        public ActionResult<List<OrderDTO>> GetOrdersByUserId([FromRoute] int id)
-        {
-            try
-            {
-                var response = _service.GetOrdersByUserId(id);
-                if (response.Count == 0)
-                {
-                    NotFound($"User ID {id} has no orders.");
-                }
-                return Ok(response);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest($"{ex.Message}");
-            }
-        }
-
-        [HttpGet("GetOrderById/{id}")]
+        [HttpGet("GetOrderById/{id}"), Authorize(Roles = "admin")]
         public ActionResult<OrderDTO> GetOrderById([FromRoute] int id)
         {
             try
@@ -82,7 +91,7 @@ namespace API_TrabajoPractico.Controllers
             }
         }
 
-        [HttpPut("UpdateOrderStatus/{id}")]
+        [HttpPut("UpdateOrderStatus/{id}"), Authorize(Roles = "admin")]
         public ActionResult<OrderDTO> UpdateOrderStatus([FromRoute] int id ,[FromBody] OrderStatusViewModel status)
         {
             try
@@ -90,7 +99,7 @@ namespace API_TrabajoPractico.Controllers
                 var response = _service.UpdateOrderStatus(id, status);
                 if (response == null)
                 {
-                    NotFound($"Order ID {id} not found.");
+                    return NotFound($"Order ID {id} not found.");
                 }
                 return Ok(response);
             }
@@ -100,7 +109,7 @@ namespace API_TrabajoPractico.Controllers
             }
         }
 
-        [HttpDelete("DeleteOrder/{id}")]
+        [HttpDelete("DeleteOrder/{id}"), Authorize(Roles = "admin")]
         public ActionResult<string> DeleteOrder([FromRoute] int id)
         {
             try
