@@ -115,10 +115,18 @@ namespace Servicio.Services
                 return null;
             }
 
-            _context.Product.Remove(_context.Product.Single(s => s.Id == id));
+            var orderItems = _context.OrderItem.Where(oi => oi.ProductId == id).ToList();
+
+            if (orderItems.Count > 0)
+            {
+                _context.OrderItem.RemoveRange(orderItems);
+                _context.SaveChanges();
+            }
+
+            _context.Product.Remove(product);
             _context.SaveChanges();
 
-            return $"Product ID {id} succesfully deleted";
+            return $"Product ID {id} successfully deleted";
         }
     }
 }

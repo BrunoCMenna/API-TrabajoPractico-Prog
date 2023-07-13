@@ -174,14 +174,22 @@ namespace Servicio.Services
 
         public string DeleteOrder(int id)
         {
+            
             var order = _context.Order.FirstOrDefault(p => p.Id == id);
             if (order == null)
             {
                 return null;
             }
 
-            _context.Order.Remove(_context.Order.Single(s => s.Id == id));
-            _context.OrderItem.Remove(_context.OrderItem.Single(s => s.OrderId == id));
+            var orderItems = _context.OrderItem.Where(p => p.OrderId == id).ToList();
+
+            if (orderItems.Count > 0)
+            {
+                _context.OrderItem.RemoveRange(orderItems);
+                _context.SaveChanges();
+            }
+
+            _context.Order.Remove(_context.Order.Single(s => s.Id == id));      
             _context.SaveChanges();
 
             return $"Order ID {id} succesfully deleted";

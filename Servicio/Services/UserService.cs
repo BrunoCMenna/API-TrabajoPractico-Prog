@@ -100,17 +100,35 @@ namespace Servicio.Services
 
         public string DeleteUser(int id)
         {
-            var user = _context.User.FirstOrDefault(p => p.Id == id);
+            var user = _context.User.FirstOrDefault(u => u.Id == id);
             if (user == null)
             {
                 return null;
             }
-            
-            _context.User.Remove(_context.User.Single(s => s.Id == id));
+
+            var orderItems = _context.OrderItem
+                .Where(oi => oi.OrderId == _context.Order.FirstOrDefault(o => o.UserId == id).Id)
+                .ToList();
+
+            if (orderItems.Count > 0)
+            {
+                _context.OrderItem.RemoveRange(orderItems);
+                _context.SaveChanges();
+            }
+
+            var orders = _context.Order.Where(o => o.UserId == id).ToList();
+
+            if (orders.Count > 0)
+            {
+                _context.Order.RemoveRange(orders);
+                _context.SaveChanges();
+            }
+
+            _context.User.Remove(user);
             _context.SaveChanges();
 
-            return "User has been deleted successfully";
-
+            return $"User ID {id} successfully deleted";
         }
+
     }
 }
