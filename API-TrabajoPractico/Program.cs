@@ -21,6 +21,17 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IPublicUserService, PublicUserService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 
+//configuración necesaria para evitar errores de CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowLocalhost3000", builder =>
+    {
+        builder.WithOrigins("http://localhost:3000") // Cambia esto con tu dominio de cliente
+               .AllowAnyHeader()
+               .AllowAnyMethod();
+    });
+});
+
 //JWT Configuration
 var appSettingsSection = builder.Configuration.GetSection("AppSettings");
 
@@ -63,6 +74,9 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 var app = builder.Build();
+
+//configuración necesaria para evitar errores de CORS
+app.UseCors("AllowLocalhost3000");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

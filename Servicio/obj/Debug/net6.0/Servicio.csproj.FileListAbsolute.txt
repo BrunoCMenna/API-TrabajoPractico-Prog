@@ -13,3 +13,18 @@ C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\obj\Debug\net6.0\Servi
 C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\obj\Debug\net6.0\refint\Servicio.dll
 C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\obj\Debug\net6.0\Servicio.pdb
 C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\obj\Debug\net6.0\ref\Servicio.dll
+C:\Users\Tobias\Desktop\PPS\API-TrabajoPractico-Prog\Servicio\bin\Debug\net6.0\Servicio.deps.json
+C:\Users\Tobias\Desktop\PPS\API-TrabajoPractico-Prog\Servicio\bin\Debug\net6.0\Servicio.dll
+C:\Users\Tobias\Desktop\PPS\API-TrabajoPractico-Prog\Servicio\bin\Debug\net6.0\Servicio.pdb
+C:\Users\Tobias\Desktop\PPS\API-TrabajoPractico-Prog\Servicio\bin\Debug\net6.0\Modelo.dll
+C:\Users\Tobias\Desktop\PPS\API-TrabajoPractico-Prog\Servicio\bin\Debug\net6.0\Modelo.pdb
+C:\Users\Tobias\Desktop\PPS\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.csproj.AssemblyReference.cache
+C:\Users\Tobias\Desktop\PPS\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tobias\Desktop\PPS\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.AssemblyInfoInputs.cache
+C:\Users\Tobias\Desktop\PPS\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.AssemblyInfo.cs
+C:\Users\Tobias\Desktop\PPS\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.csproj.CoreCompileInputs.cache
+C:\Users\Tobias\Desktop\PPS\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.csproj.CopyComplete
+C:\Users\Tobias\Desktop\PPS\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.dll
+C:\Users\Tobias\Desktop\PPS\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\refint\Servicio.dll
+C:\Users\Tobias\Desktop\PPS\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.pdb
+C:\Users\Tobias\Desktop\PPS\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\ref\Servicio.dll
