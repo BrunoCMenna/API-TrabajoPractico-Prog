@@ -11,6 +11,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//using System.Net;
+//using System.Net.Http;
+//using System.IO;
+//using System.Text;
+
+
 namespace Servicio.Services
 {
     public class ProductService : IProductService
@@ -69,8 +75,29 @@ namespace Servicio.Services
             return topProducts;
         }
 
-        public ProductDTO AddNewProduct(ProductViewModel product)
+        public async Task<ProductDTO> AddNewProduct(ProductViewModel product)
         {
+            //prueba
+            byte[] imageBytes;
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    imageBytes = await client.GetByteArrayAsync(product.Image);
+                }
+                catch (Exception ex)
+                {
+                    // Manejar cualquier error que pueda ocurrir al descargar la imagen
+                    // Por ejemplo, puedes lanzar una excepción o devolver un mensaje de error.
+                    // Aquí, simplemente se muestra un mensaje de error en la consola.
+                    Console.WriteLine($"Error al descargar la imagen: {ex.Message}");
+                    return null;
+                }
+            }
+
+            string base64Image = "data:image/jpeg;base64," + Convert.ToBase64String(imageBytes);
+            //hasta aca la prueba
+            //acá debería ir la lógica de guardar la imágen en base64
             _context.Product.Add(new Product()
             {
                 Brand = product.Brand,
@@ -79,7 +106,8 @@ namespace Servicio.Services
                 Ram = product.Ram,
                 Description = product.Description,
                 Price = product.Price,
-          
+                //prueba
+                Image = base64Image
             });
             _context.SaveChanges();
 

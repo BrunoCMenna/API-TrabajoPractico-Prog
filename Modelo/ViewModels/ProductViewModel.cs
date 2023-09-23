@@ -14,5 +14,7 @@ namespace Modelo.ViewModels
         public int Ram { get; set; }
         public string? Description { get; set; }
         public decimal Price { get; set; }
+        //prueba
+        public string Image { get; set; }
     }
 }
