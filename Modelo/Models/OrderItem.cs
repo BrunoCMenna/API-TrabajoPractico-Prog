@@ -2,7 +2,6 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
-using System.Text.Json.Serialization;
 
 namespace Modelo.Models
 {
@@ -15,9 +14,7 @@ namespace Modelo.Models
         public decimal UnitaryPrice { get; set; }
         public decimal TotalPrice { get; set; }
 
-        [JsonIgnore]
         public virtual Order Order { get; set; }
-        [JsonIgnore]
         public virtual Product Product { get; set; }
     }
 }

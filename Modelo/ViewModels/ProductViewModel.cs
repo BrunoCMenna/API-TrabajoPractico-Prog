@@ -16,5 +16,7 @@ namespace Modelo.ViewModels
         public decimal Price { get; set; }
         //prueba
         public string Image { get; set; }
+        public int InStock { get; set; }
+        public bool IsActive { get; set; }
     }
 }

@@ -98,7 +98,9 @@ namespace Servicio.Services
             string base64Image = "data:image/jpeg;base64," + Convert.ToBase64String(imageBytes);
             //hasta aca la prueba
             //acá debería ir la lógica de guardar la imágen en base64
-            _context.Product.Add(new Product()
+            try
+            {
+                _context.Product.Add(new Product()
             {
                 Brand = product.Brand,
                 Model = product.Model,
@@ -107,9 +109,21 @@ namespace Servicio.Services
                 Description = product.Description,
                 Price = product.Price,
                 //prueba
-                Image = base64Image
+                //Image = base64Image,
+                InStock = product.InStock,
+                IsActive = product.IsActive
             });
-            _context.SaveChanges();
+                _context.SaveChanges();
+            }  
+            catch (Exception ex)
+                {
+                // Manejar cualquier error que pueda ocurrir al descargar la imagen
+                // Por ejemplo, puedes lanzar una excepción o devolver un mensaje de error.
+                // Aquí, simplemente se muestra un mensaje de error en la consola.
+                Console.WriteLine($"Error al descargar la imagen: {ex.Message}");
+                return null;
+            }
+            
 
             var lastProduct = _context.Product.OrderBy(x => x.Id).Last();
             return _mapper.Map<ProductDTO>(lastProduct);

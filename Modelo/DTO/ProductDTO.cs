@@ -17,5 +17,7 @@ namespace Modelo.DTO
         public decimal Price { get; set; }
         //pueba
         public string Image { get; set; }
+        public int InStock { get; set; }
+        public bool IsActive { get; set; }
     }
 }

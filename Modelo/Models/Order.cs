@@ -2,7 +2,6 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
-using System.Text.Json.Serialization;
 
 namespace Modelo.Models
 {
@@ -15,13 +14,14 @@ namespace Modelo.Models
 
         public int Id { get; set; }
         public int UserId { get; set; }
+        public int Phone { get; set; }
+        public string Province { get; set; }
         public string ShippingAddress { get; set; }
         public string ZipCode { get; set; }
         public decimal OrderTotal { get; set; }
         public DateTime OrderDate { get; set; }
         public string OrderStatus { get; set; }
 
-        [JsonIgnore]
         public virtual User User { get; set; }
         public virtual ICollection<OrderItem> OrderItem { get; set; }
     }

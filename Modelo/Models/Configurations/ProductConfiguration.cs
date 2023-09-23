@@ -21,6 +21,14 @@ namespace Modelo.Models.Configurations
 
             entity.Property(e => e.Description).HasColumnName("description");
 
+            entity.Property(e => e.Image)
+                .IsUnicode(false)
+                .HasColumnName("image");
+
+            entity.Property(e => e.InStock).HasColumnName("in_stock");
+
+            entity.Property(e => e.IsActive).HasColumnName("is_active");
+
             entity.Property(e => e.Model)
                 .IsRequired()
                 .HasMaxLength(250)

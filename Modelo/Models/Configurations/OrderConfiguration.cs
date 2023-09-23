@@ -27,6 +27,13 @@ namespace Modelo.Models.Configurations
                 .HasColumnType("decimal(18, 0)")
                 .HasColumnName("order_total");
 
+            entity.Property(e => e.Phone).HasColumnName("phone");
+
+            entity.Property(e => e.Province)
+                .IsRequired()
+                .HasMaxLength(250)
+                .HasColumnName("province");
+
             entity.Property(e => e.ShippingAddress)
                 .IsRequired()
                 .HasMaxLength(250)
@@ -43,7 +50,7 @@ namespace Modelo.Models.Configurations
                 .WithMany(p => p.Order)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Order__user_id__05D8E0BE");
+                .HasConstraintName("FK__Order__user_id__4F7CD00D");
 
             OnConfigurePartial(entity);
         }

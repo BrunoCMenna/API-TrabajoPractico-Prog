@@ -35,7 +35,7 @@
          "ObjectType": 0
       }
    ],
-   "UiHint": "bruno.Ecommerce.dbo",
+   "UiHint": "vj2200.ecommercecelulares.dbo",
    "UncountableWords": null,
    "UseBoolPropertiesWithoutDefaultSql": false,
    "UseDatabaseNames": false,

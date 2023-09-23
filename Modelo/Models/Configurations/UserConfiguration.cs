@@ -40,7 +40,7 @@ namespace Modelo.Models.Configurations
                 .WithMany(p => p.User)
                 .HasForeignKey(d => d.RoleId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__User__role_id__5070F446");
+                .HasConstraintName("FK__User__role_id__398D8EEE");
 
             OnConfigurePartial(entity);
         }

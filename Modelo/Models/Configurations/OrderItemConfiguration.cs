@@ -32,13 +32,13 @@ namespace Modelo.Models.Configurations
                 .WithMany(p => p.OrderItem)
                 .HasForeignKey(d => d.OrderId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__OrderItem__order__08B54D69");
+                .HasConstraintName("FK__OrderItem__order__52593CB8");
 
             entity.HasOne(d => d.Product)
                 .WithMany(p => p.OrderItem)
                 .HasForeignKey(d => d.ProductId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__OrderItem__produ__09A971A2");
+                .HasConstraintName("FK__OrderItem__produ__534D60F1");
 
             OnConfigurePartial(entity);
         }
