@@ -7,21 +7,21 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAfoXhFxmtjECcILY0SO3shgAAAAACAAAAAAAQZgAAAAEAACAAAACgAd5HuIxD0XGy9Wp3ntlchuaOVJHvBa1IIOV3uiPSSQAAAAAOgAAAAAIAACAAAAD29Dan2bztURIFcv6Oy3FhLZgkfm78jNkJsLVOcabooiAAAAD7uNVInsloNBjrUIYkFHpdKWRFsuueFysUoS4wDT6YWUAAAABpuvDx0JXFs+VyzPgkjZIhLxpbmDeS5Ua9nlIFO5O4HnScKDyiOeB7/EeC1d23FqHTRQ8vit5rYC5bo57j/24z</EncryptedPassword>
     <_PublishTargetUrl>ftp://155.254.244.30/www.ecommercecelulares.somee.com</_PublishTargetUrl>
-    <History>True|2023-09-21T18:29:12.7935227Z;True|2023-09-21T12:46:14.2123660-03:00;True|2023-09-21T10:51:51.9863324-03:00;</History>
+    <History>True|2023-09-24T07:47:03.7003277Z;False|2023-09-24T04:43:08.1172605-03:00;True|2023-09-21T15:29:12.7935227-03:00;True|2023-09-21T12:46:14.2123660-03:00;True|2023-09-21T10:51:51.9863324-03:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
     <File Include="API-TrabajoPractico.deps.json">
-      <publishTime>09/21/2023 15:25:44</publishTime>
+      <publishTime>09/24/2023 04:44:01</publishTime>
     </File>
     <File Include="API-TrabajoPractico.dll">
-      <publishTime>09/21/2023 15:25:44</publishTime>
+      <publishTime>09/24/2023 04:44:01</publishTime>
     </File>
     <File Include="API-TrabajoPractico.exe">
-      <publishTime>09/21/2023 15:25:44</publishTime>
+      <publishTime>09/24/2023 04:44:01</publishTime>
     </File>
     <File Include="API-TrabajoPractico.pdb">
-      <publishTime>09/21/2023 15:25:44</publishTime>
+      <publishTime>09/24/2023 04:44:01</publishTime>
     </File>
     <File Include="API-TrabajoPractico.runtimeconfig.json">
       <publishTime>09/21/2023 10:48:40</publishTime>
@@ -81,10 +81,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/15/2019 05:36:56</publishTime>
     </File>
     <File Include="Modelo.dll">
-      <publishTime>09/21/2023 10:48:39</publishTime>
+      <publishTime>09/24/2023 04:42:18</publishTime>
     </File>
     <File Include="Modelo.pdb">
-      <publishTime>09/21/2023 10:48:39</publishTime>
+      <publishTime>09/24/2023 04:42:18</publishTime>
     </File>
     <File Include="runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll">
       <publishTime>11/15/2019 05:56:36</publishTime>
@@ -126,10 +126,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/03/2020 15:42:16</publishTime>
     </File>
     <File Include="Servicio.dll">
-      <publishTime>09/21/2023 10:48:39</publishTime>
+      <publishTime>09/24/2023 04:42:18</publishTime>
     </File>
     <File Include="Servicio.pdb">
-      <publishTime>09/21/2023 10:48:39</publishTime>
+      <publishTime>09/24/2023 04:42:18</publishTime>
     </File>
     <File Include="Swashbuckle.AspNetCore.Filters.Abstractions.dll">
       <publishTime>11/13/2022 18:17:34</publishTime>
@@ -168,7 +168,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/15/2019 05:56:52</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>09/21/2023 15:25:45</publishTime>
+      <publishTime>09/24/2023 04:44:01</publishTime>
     </File>
   </ItemGroup>
 </Project>

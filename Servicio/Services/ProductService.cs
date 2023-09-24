@@ -75,15 +75,18 @@ namespace Servicio.Services
             return topProducts;
         }
 
-        public async Task<ProductDTO> AddNewProduct(ProductViewModel product)
+        public ProductDTO AddNewProduct(ProductViewModel product)
         {
-            //prueba
+
+
             byte[] imageBytes;
+
             using (HttpClient client = new HttpClient())
             {
                 try
                 {
-                    imageBytes = await client.GetByteArrayAsync(product.Image);
+                    // Usar Task.Result para obtener el resultado de la tarea sincrónicamente
+                    imageBytes = client.GetByteArrayAsync(product.Image).Result;
                 }
                 catch (Exception ex)
                 {
@@ -96,11 +99,8 @@ namespace Servicio.Services
             }
 
             string base64Image = "data:image/jpeg;base64," + Convert.ToBase64String(imageBytes);
-            //hasta aca la prueba
-            //acá debería ir la lógica de guardar la imágen en base64
-            try
-            {
-                _context.Product.Add(new Product()
+
+            _context.Product.Add(new Product()
             {
                 Brand = product.Brand,
                 Model = product.Model,
@@ -108,23 +108,13 @@ namespace Servicio.Services
                 Ram = product.Ram,
                 Description = product.Description,
                 Price = product.Price,
-                //prueba
-                //Image = base64Image,
+                Image = base64Image,
                 InStock = product.InStock,
                 IsActive = product.IsActive
             });
-                _context.SaveChanges();
-            }  
-            catch (Exception ex)
-                {
-                // Manejar cualquier error que pueda ocurrir al descargar la imagen
-                // Por ejemplo, puedes lanzar una excepción o devolver un mensaje de error.
-                // Aquí, simplemente se muestra un mensaje de error en la consola.
-                Console.WriteLine($"Error al descargar la imagen: {ex.Message}");
-                return null;
-            }
             
-
+            _context.SaveChanges();
+            
             var lastProduct = _context.Product.OrderBy(x => x.Id).Last();
             return _mapper.Map<ProductDTO>(lastProduct);
         }

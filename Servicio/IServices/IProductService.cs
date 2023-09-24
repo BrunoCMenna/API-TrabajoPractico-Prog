@@ -14,7 +14,7 @@ namespace Servicio.IServices
         List<ProductDTO> GetProducts();
         ProductDTO GetProductById(int id);
         List<TopProductsDTO> GetTopProducts();
-        Task<ProductDTO> AddNewProduct(ProductViewModel product);
+        ProductDTO AddNewProduct(ProductViewModel product);
         ProductDTO UpdateProduct(int id, ProductViewModel product);
         string DeleteProduct(int id);
     }
