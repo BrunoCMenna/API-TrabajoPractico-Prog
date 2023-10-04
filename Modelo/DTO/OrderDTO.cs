@@ -11,6 +11,8 @@ namespace Modelo.DTO
     {
         public int Id { get; set; }
         public int UserId { get; set; }
+        public int Phone { get; set; }
+        public string Province { get; set; }
         public string ShippingAddress { get; set; }
         public string ZipCode { get; set; }
         public decimal OrderTotal { get; set; }

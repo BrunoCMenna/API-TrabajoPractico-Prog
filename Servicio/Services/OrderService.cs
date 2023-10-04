@@ -15,6 +15,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Net.Http;
 using System.Security.Claims;
+using System.Numerics;
 
 namespace Servicio.Services
 {
@@ -40,6 +41,8 @@ namespace Servicio.Services
             Order newOrder = new Order
             {
                 UserId = orderVM.UserId,
+                Phone = 123,
+                Province = "Chaco",
                 ShippingAddress = orderVM.ShippingAddress,
                 ZipCode = orderVM.ZipCode,
                 OrderTotal = orderVM.OrderTotal,
@@ -78,6 +81,8 @@ namespace Servicio.Services
                             {
                                 Id = o.Id,
                                 UserId = o.UserId,
+                                Phone = o.Phone,
+                                Province = o.Province,
                                 ShippingAddress = o.ShippingAddress,
                                 ZipCode = o.ZipCode,
                                 OrderTotal = o.OrderTotal,

@@ -30,6 +30,12 @@ builder.Services.AddCors(options =>
                .AllowAnyHeader()
                .AllowAnyMethod();
     });
+    options.AddPolicy("trabajo-mgqkjzpxu-brunocmenna.vercel.app", builder =>
+    {
+        builder.WithOrigins("https://trabajo-mgqkjzpxu-brunocmenna.vercel.app") // Cambia esto con tu dominio de cliente
+               .AllowAnyHeader()
+               .AllowAnyMethod();
+    });
 });
 
 //JWT Configuration
