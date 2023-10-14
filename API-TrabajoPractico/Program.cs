@@ -30,9 +30,9 @@ builder.Services.AddCors(options =>
                .AllowAnyHeader()
                .AllowAnyMethod();
     });
-    options.AddPolicy("trabajo-mgqkjzpxu-brunocmenna.vercel.app", builder =>
+    options.AddPolicy("AllowTrabajoLabVercel", builder =>
     {
-        builder.WithOrigins("https://trabajo-mgqkjzpxu-brunocmenna.vercel.app") // Cambia esto con tu dominio de cliente
+        builder.WithOrigins("https://trabajo-lab.vercel.app") // Cambia esto con tu dominio de cliente
                .AllowAnyHeader()
                .AllowAnyMethod();
     });
@@ -83,6 +83,7 @@ var app = builder.Build();
 
 //configuración necesaria para evitar errores de CORS
 app.UseCors("AllowLocalhost3000");
+app.UseCors("AllowTrabajoLabVercel"); // Usa la política CORS adecuada
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -18,6 +18,7 @@ namespace Modelo.DTO
         public decimal OrderTotal { get; set; }
         public DateTime OrderDate { get; set; }
         public string OrderStatus { get; set; }
+        public string OrderImage { get; set; }
         public List<OrderItem> OrderItems { get; set; }
     }
 }

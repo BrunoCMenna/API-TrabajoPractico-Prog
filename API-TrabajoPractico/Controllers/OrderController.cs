@@ -59,7 +59,7 @@ namespace API_TrabajoPractico.Controllers
             }
         }
 
-        [HttpGet("GetOrders"), Authorize(Roles = "admin")]
+        [HttpGet("GetOrders")] //, Authorize(Roles = "admin")
         public ActionResult<List<OrderDTO>> GetOrders()
         {
             try
@@ -109,7 +109,7 @@ namespace API_TrabajoPractico.Controllers
             }
         }
 
-        [HttpDelete("DeleteOrder/{id}"), Authorize(Roles = "admin")]
+        [HttpDelete("DeleteOrder/{id}")] //, Authorize(Roles = "admin")
         public ActionResult<string> DeleteOrder([FromRoute] int id)
         {
             try

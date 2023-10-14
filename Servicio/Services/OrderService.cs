@@ -16,6 +16,7 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using System.Security.Claims;
 using System.Numerics;
+using static System.Net.WebRequestMethods;
 
 namespace Servicio.Services
 {
@@ -101,11 +102,14 @@ namespace Servicio.Services
             {
                 Id = o.Id,
                 UserId = o.UserId,
+                Phone = o.Phone,
+                Province = o.Province,
                 ShippingAddress = o.ShippingAddress,
                 ZipCode = o.ZipCode,
                 OrderTotal = o.OrderTotal,
                 OrderDate = o.OrderDate,
                 OrderStatus = o.OrderStatus,
+                OrderImage = "https://i.imgur.com/YCnrTPL.jpg",
                 OrderItems = _context.OrderItem.Where(oi => oi.OrderId == o.Id).ToList()
 
             }).ToList();
