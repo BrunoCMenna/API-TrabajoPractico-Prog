@@ -17,6 +17,7 @@ using System.Net.Http;
 using System.Security.Claims;
 using System.Numerics;
 using static System.Net.WebRequestMethods;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Servicio.Services
 {
@@ -42,13 +43,16 @@ namespace Servicio.Services
             Order newOrder = new Order
             {
                 UserId = orderVM.UserId,
-                Phone = 123,
-                Province = "Chaco",
+                Phone = orderVM.Phone,
+                Province = orderVM.Province,
                 ShippingAddress = orderVM.ShippingAddress,
                 ZipCode = orderVM.ZipCode,
                 OrderTotal = orderVM.OrderTotal,
                 OrderDate = DateTime.Now,
-                OrderStatus = orderVM.OrderStatus
+                OrderStatus = orderVM.OrderStatus,
+                NameLastName = orderVM.NameLastName,
+                Email = orderVM.Email,
+                City = orderVM.City
             };
 
             _context.Order.Add(newOrder);
@@ -67,6 +71,9 @@ namespace Servicio.Services
                     OrderId = newOrder.Id,
                     ProductId = item.ProductId,
                     Quantity = item.Quantity,
+                    Image = product.Image,
+                    Brand = product.Brand,
+                    Model = item.Model,
                     UnitaryPrice = product.Price,
                     TotalPrice = product.Price * item.Quantity
                 };
@@ -89,6 +96,9 @@ namespace Servicio.Services
                                 OrderTotal = o.OrderTotal,
                                 OrderDate = o.OrderDate,
                                 OrderStatus = o.OrderStatus,
+                                NameLastName = o.NameLastName,
+                                Email = o.Email,
+                                City = o.City,
                                 OrderItems = _context.OrderItem.Where(oi => oi.OrderId == o.Id).ToList()
                             })
                             .FirstOrDefault();
@@ -110,6 +120,9 @@ namespace Servicio.Services
                 OrderDate = o.OrderDate,
                 OrderStatus = o.OrderStatus,
                 OrderImage = "https://i.imgur.com/YCnrTPL.jpg",
+                NameLastName = o.NameLastName,
+                Email = o.Email,
+                City = o.City,
                 OrderItems = _context.OrderItem.Where(oi => oi.OrderId == o.Id).ToList()
 
             }).ToList();

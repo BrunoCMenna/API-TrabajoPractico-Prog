@@ -11,7 +11,7 @@ namespace Modelo.DTO
     {
         public int Id { get; set; }
         public int UserId { get; set; }
-        public int Phone { get; set; }
+        public string Phone { get; set; }
         public string Province { get; set; }
         public string ShippingAddress { get; set; }
         public string ZipCode { get; set; }
@@ -19,6 +19,9 @@ namespace Modelo.DTO
         public DateTime OrderDate { get; set; }
         public string OrderStatus { get; set; }
         public string OrderImage { get; set; }
-        public List<OrderItem> OrderItems { get; set; }
+        public string NameLastName { get; set; }
+        public string Email { get; set; }
+        public string City { get; set; }
+    public List<OrderItem> OrderItems { get; set; }
     }
 }

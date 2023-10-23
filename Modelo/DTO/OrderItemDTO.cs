@@ -10,5 +10,8 @@ namespace Modelo.DTO
     {
         public int ProductId { get; set; }
         public int Quantity { get; set; }
+        public string Image { get; set; }
+        public string Brand { get; set; }
+        public string Model { get; set; }
     }
 }

@@ -13,6 +13,9 @@ namespace Modelo.Models
         public int Quantity { get; set; }
         public decimal UnitaryPrice { get; set; }
         public decimal TotalPrice { get; set; }
+        public string Image { get; set; }
+        public string Brand { get; set; }
+        public string Model { get; set; }
 
         public virtual Order Order { get; set; }
         public virtual Product Product { get; set; }

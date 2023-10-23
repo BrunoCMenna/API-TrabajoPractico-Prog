@@ -14,6 +14,21 @@ namespace Modelo.Models.Configurations
         {
             entity.Property(e => e.Id).HasColumnName("id");
 
+            entity.Property(e => e.City)
+                .IsRequired()
+                .HasMaxLength(250)
+                .HasColumnName("city");
+
+            entity.Property(e => e.Email)
+                .IsRequired()
+                .HasMaxLength(250)
+                .HasColumnName("email");
+
+            entity.Property(e => e.NameLastName)
+                .IsRequired()
+                .HasMaxLength(300)
+                .HasColumnName("name_last_name");
+
             entity.Property(e => e.OrderDate)
                 .HasColumnType("datetime")
                 .HasColumnName("order_date");
@@ -27,7 +42,10 @@ namespace Modelo.Models.Configurations
                 .HasColumnType("decimal(18, 0)")
                 .HasColumnName("order_total");
 
-            entity.Property(e => e.Phone).HasColumnName("phone");
+            entity.Property(e => e.Phone)
+                .IsRequired()
+                .HasMaxLength(250)
+                .HasColumnName("phone");
 
             entity.Property(e => e.Province)
                 .IsRequired()
@@ -50,7 +68,7 @@ namespace Modelo.Models.Configurations
                 .WithMany(p => p.Order)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Order__user_id__4F7CD00D");
+                .HasConstraintName("FK__Order__user_id__5CD6CB2B");
 
             OnConfigurePartial(entity);
         }

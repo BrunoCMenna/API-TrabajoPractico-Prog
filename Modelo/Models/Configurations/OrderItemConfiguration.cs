@@ -14,6 +14,21 @@ namespace Modelo.Models.Configurations
         {
             entity.Property(e => e.Id).HasColumnName("id");
 
+            entity.Property(e => e.Brand)
+                .IsRequired()
+                .HasMaxLength(250)
+                .HasColumnName("brand");
+
+            entity.Property(e => e.Image)
+                .IsRequired()
+                .IsUnicode(false)
+                .HasColumnName("image");
+
+            entity.Property(e => e.Model)
+                .IsRequired()
+                .HasMaxLength(250)
+                .HasColumnName("model");
+
             entity.Property(e => e.OrderId).HasColumnName("order_id");
 
             entity.Property(e => e.ProductId).HasColumnName("product_id");
@@ -32,13 +47,13 @@ namespace Modelo.Models.Configurations
                 .WithMany(p => p.OrderItem)
                 .HasForeignKey(d => d.OrderId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__OrderItem__order__52593CB8");
+                .HasConstraintName("FK__OrderItem__order__5FB337D6");
 
             entity.HasOne(d => d.Product)
                 .WithMany(p => p.OrderItem)
                 .HasForeignKey(d => d.ProductId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__OrderItem__produ__534D60F1");
+                .HasConstraintName("FK__OrderItem__produ__60A75C0F");
 
             OnConfigurePartial(entity);
         }
