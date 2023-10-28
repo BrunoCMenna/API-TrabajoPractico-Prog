@@ -227,11 +227,3 @@ C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\API-TrabajoPract
 C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\API-TrabajoPractico\obj\Debug\net6.0\API-TrabajoPractico.genruntimeconfig.cache
 C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\API-TrabajoPractico\obj\Debug\net6.0\ref\API-TrabajoPractico.dll
 C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\API-TrabajoPractico\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
-C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\API-TrabajoPractico\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\API-TrabajoPractico\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\API-TrabajoPractico\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\API-TrabajoPractico\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\API-TrabajoPractico\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
-C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\API-TrabajoPractico\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\API-TrabajoPractico\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
-C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\API-TrabajoPractico\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll

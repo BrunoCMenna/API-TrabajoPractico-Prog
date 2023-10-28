@@ -153,11 +153,3 @@ C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\UnitTesting\bin\
 C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\UnitTesting\bin\Debug\net6.0\API-TrabajoPractico.dll
 C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\UnitTesting\bin\Debug\net6.0\API-TrabajoPractico.pdb
 C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\UnitTesting\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
-C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\UnitTesting\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\UnitTesting\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\UnitTesting\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\UnitTesting\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\UnitTesting\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
-C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\UnitTesting\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\UnitTesting\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
-C:\Users\matia\Desktop\LAB4\New folder\API-TrabajoPractico-Prog\UnitTesting\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
