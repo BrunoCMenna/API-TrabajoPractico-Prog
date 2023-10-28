@@ -20,13 +20,13 @@ namespace API_TrabajoPractico.Controllers
             _service = service;
         }
 
-        [HttpPost("CreateOrder"), Authorize]
-        public ActionResult<OrderDTO> CreateOrder([FromBody] OrderViewModel orderDTO)
+        [HttpPost("CreateOrder")]
+        public ActionResult CreateOrder([FromBody] OrderViewModel orderDTO)
         {
             try
             {
                 var response = _service.CreateOrder(orderDTO);
-                return Ok(response);
+                return Ok();
             }
             catch (Exception ex)
             {
@@ -92,7 +92,7 @@ namespace API_TrabajoPractico.Controllers
         }
 
         [HttpPut("UpdateOrderStatus/{id}"), Authorize(Roles = "admin")]
-        public ActionResult<OrderDTO> UpdateOrderStatus([FromRoute] int id ,[FromBody] OrderStatusViewModel status)
+        public ActionResult UpdateOrderStatus([FromRoute] int id ,[FromBody] OrderStatusViewModel status)
         {
             try
             {
@@ -101,7 +101,7 @@ namespace API_TrabajoPractico.Controllers
                 {
                     return NotFound($"Order ID {id} not found.");
                 }
-                return Ok(response);
+                return Ok();
             }
             catch (Exception ex)
             {

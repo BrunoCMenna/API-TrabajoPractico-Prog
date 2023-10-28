@@ -119,7 +119,6 @@ namespace Servicio.Services
                 OrderTotal = o.OrderTotal,
                 OrderDate = o.OrderDate,
                 OrderStatus = o.OrderStatus,
-                OrderImage = "https://i.imgur.com/YCnrTPL.jpg",
                 NameLastName = o.NameLastName,
                 Email = o.Email,
                 City = o.City,
@@ -142,11 +141,16 @@ namespace Servicio.Services
             {
                 Id = o.Id,
                 UserId = o.UserId,
+                Phone = o.Phone,
+                Province = o.Province,
                 ShippingAddress = o.ShippingAddress,
                 ZipCode = o.ZipCode,
                 OrderTotal = o.OrderTotal,
                 OrderDate = o.OrderDate,
                 OrderStatus = o.OrderStatus,
+                NameLastName = o.NameLastName,
+                Email = o.Email,
+                City = o.City,
                 OrderItems = _context.OrderItem.Where(oi => oi.OrderId == o.Id).ToList()
             }).ToList();
 
@@ -165,11 +169,16 @@ namespace Servicio.Services
             {
                 Id = o.Id,
                 UserId = o.UserId,
+                Phone = o.Phone,
+                Province = o.Province,
                 ShippingAddress = o.ShippingAddress,
                 ZipCode = o.ZipCode,
                 OrderTotal = o.OrderTotal,
                 OrderDate = o.OrderDate,
                 OrderStatus = o.OrderStatus,
+                NameLastName = o.NameLastName,
+                Email = o.Email,
+                City = o.City,
                 OrderItems = _context.OrderItem.Where(oi => oi.OrderId == o.Id).ToList()
 
             }).FirstOrDefault();

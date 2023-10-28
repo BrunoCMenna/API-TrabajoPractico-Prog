@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tobias\\Desktop\\PPS\\API-TrabajoPractico-Prog\\Servicio\\Servicio.csproj": {}
+    "C:\\Facultad\\Programacion III\\API-TrabajoPractico\\Servicio\\Servicio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tobias\\Desktop\\PPS\\API-TrabajoPractico-Prog\\Modelo\\Modelo.csproj": {
+    "C:\\Facultad\\Programacion III\\API-TrabajoPractico\\Modelo\\Modelo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tobias\\Desktop\\PPS\\API-TrabajoPractico-Prog\\Modelo\\Modelo.csproj",
+        "projectUniqueName": "C:\\Facultad\\Programacion III\\API-TrabajoPractico\\Modelo\\Modelo.csproj",
         "projectName": "Modelo",
-        "projectPath": "C:\\Users\\Tobias\\Desktop\\PPS\\API-TrabajoPractico-Prog\\Modelo\\Modelo.csproj",
-        "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tobias\\Desktop\\PPS\\API-TrabajoPractico-Prog\\Modelo\\obj\\",
+        "projectPath": "C:\\Facultad\\Programacion III\\API-TrabajoPractico\\Modelo\\Modelo.csproj",
+        "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
+        "outputPath": "C:\\Facultad\\Programacion III\\API-TrabajoPractico\\Modelo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Tobias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,21 +67,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Tobias\\Desktop\\PPS\\API-TrabajoPractico-Prog\\Servicio\\Servicio.csproj": {
+    "C:\\Facultad\\Programacion III\\API-TrabajoPractico\\Servicio\\Servicio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tobias\\Desktop\\PPS\\API-TrabajoPractico-Prog\\Servicio\\Servicio.csproj",
+        "projectUniqueName": "C:\\Facultad\\Programacion III\\API-TrabajoPractico\\Servicio\\Servicio.csproj",
         "projectName": "Servicio",
-        "projectPath": "C:\\Users\\Tobias\\Desktop\\PPS\\API-TrabajoPractico-Prog\\Servicio\\Servicio.csproj",
-        "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tobias\\Desktop\\PPS\\API-TrabajoPractico-Prog\\Servicio\\obj\\",
+        "projectPath": "C:\\Facultad\\Programacion III\\API-TrabajoPractico\\Servicio\\Servicio.csproj",
+        "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
+        "outputPath": "C:\\Facultad\\Programacion III\\API-TrabajoPractico\\Servicio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Tobias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -95,8 +95,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Tobias\\Desktop\\PPS\\API-TrabajoPractico-Prog\\Modelo\\Modelo.csproj": {
-                "projectPath": "C:\\Users\\Tobias\\Desktop\\PPS\\API-TrabajoPractico-Prog\\Modelo\\Modelo.csproj"
+              "C:\\Facultad\\Programacion III\\API-TrabajoPractico\\Modelo\\Modelo.csproj": {
+                "projectPath": "C:\\Facultad\\Programacion III\\API-TrabajoPractico\\Modelo\\Modelo.csproj"
               }
             }
           }
@@ -132,7 +132,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
