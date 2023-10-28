@@ -78,28 +78,6 @@ namespace Servicio.Services
         public ProductDTO AddNewProduct(ProductViewModel product)
         {
 
-
-            //byte[] imageBytes;
-
-            //using (HttpClient client = new HttpClient())
-            //{
-            //    try
-            //    {
-            //        // Usar Task.Result para obtener el resultado de la tarea sincrónicamente
-            //        imageBytes = client.GetByteArrayAsync(product.Image).Result;
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        // Manejar cualquier error que pueda ocurrir al descargar la imagen
-            //        // Por ejemplo, puedes lanzar una excepción o devolver un mensaje de error.
-            //        // Aquí, simplemente se muestra un mensaje de error en la consola.
-            //        Console.WriteLine($"Error al descargar la imagen: {ex.Message}");
-            //        return null;
-            //    }
-            //}
-
-            //string base64Image = "data:image/jpeg;base64," + Convert.ToBase64String(imageBytes);
-
             _context.Product.Add(new Product()
             {
                 Brand = product.Brand,
