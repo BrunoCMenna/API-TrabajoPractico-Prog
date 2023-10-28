@@ -112,6 +112,8 @@ namespace Servicio.Services
             existingProduct.Ram = product.Ram;
             existingProduct.Description = product.Description;
             existingProduct.Price = product.Price;
+            existingProduct.InStock = product.InStock;
+            existingProduct.IsActive = product.IsActive;
             _context.SaveChanges();
 
             return _mapper.Map<ProductDTO>(_context.Product.Where(w => w.Id == id).First());
@@ -123,20 +125,18 @@ namespace Servicio.Services
             if (product == null)
             {
                 return null;
-            }
-
-            var orderItems = _context.OrderItem.Where(oi => oi.ProductId == id).ToList();
-
-            if (orderItems.Count > 0)
+            } else
             {
-                _context.OrderItem.RemoveRange(orderItems);
+                product.IsActive = false;
                 _context.SaveChanges();
+                return $"Product ID {id} successfully deleted";
+
             }
 
-            _context.Product.Remove(product);
-            _context.SaveChanges();
+            
+            
 
-            return $"Product ID {id} successfully deleted";
+           
         }
     }
 }

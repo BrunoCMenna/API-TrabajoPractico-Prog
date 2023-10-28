@@ -66,6 +66,11 @@ namespace Servicio.Services
                     throw new Exception($"Product ID {item.ProductId} not found.");
                 }
 
+                if (product.InStock < item.Quantity)
+                {
+                    throw new Exception($"Not enough stock available for Product ID {item.ProductId}.");
+                }
+
                 OrderItem orderItem = new OrderItem
                 {
                     OrderId = newOrder.Id,
@@ -77,6 +82,8 @@ namespace Servicio.Services
                     UnitaryPrice = product.Price,
                     TotalPrice = product.Price * item.Quantity
                 };
+
+                product.InStock -= item.Quantity;
 
                 _context.OrderItem.Add(orderItem);
             }
