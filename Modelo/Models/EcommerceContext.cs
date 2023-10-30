@@ -19,6 +19,7 @@ namespace Modelo.Models
         {
         }
 
+        public virtual DbSet<HistoricProduct> HistoricProduct { get; set; }
         public virtual DbSet<Order> Order { get; set; }
         public virtual DbSet<OrderItem> OrderItem { get; set; }
         public virtual DbSet<Product> Product { get; set; }
@@ -27,6 +28,7 @@ namespace Modelo.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfiguration(new Configurations.HistoricProductConfiguration());
             modelBuilder.ApplyConfiguration(new Configurations.OrderConfiguration());
             modelBuilder.ApplyConfiguration(new Configurations.OrderItemConfiguration());
             modelBuilder.ApplyConfiguration(new Configurations.ProductConfiguration());

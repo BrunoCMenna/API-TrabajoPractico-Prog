@@ -21,7 +21,6 @@ namespace Modelo.Models
         public decimal OrderTotal { get; set; }
         public DateTime OrderDate { get; set; }
         public string OrderStatus { get; set; }
-        //de aca para abajo es nuevo
         public string NameLastName { get; set; }
         public string Email { get; set; }
         public string City { get; set; }

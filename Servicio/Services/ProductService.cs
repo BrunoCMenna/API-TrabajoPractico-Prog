@@ -94,6 +94,25 @@ namespace Servicio.Services
             _context.SaveChanges();
             
             var lastProduct = _context.Product.OrderBy(x => x.Id).Last();
+
+            HistoricProduct backupProduct = lastProduct.Clone();
+            _context.HistoricProduct.Add(new HistoricProduct
+            {
+                OriginalId = backupProduct.OriginalId,
+                Brand = backupProduct.Brand,
+                Model = backupProduct.Model,
+                Storage = backupProduct.Storage,
+                Ram = backupProduct.Ram,
+                Description = backupProduct.Description,
+                Price = backupProduct.Price,
+                Image = backupProduct.Image,
+                InStock = backupProduct.InStock,
+                IsActive = backupProduct.IsActive,
+                RegistrationDate = backupProduct.RegistrationDate,
+            });
+
+            _context.SaveChanges();
+
             return _mapper.Map<ProductDTO>(lastProduct);
         }
 
@@ -104,6 +123,25 @@ namespace Servicio.Services
             if (existingProduct == null)
             {
                 return null;
+            }
+
+            if (product.Price != existingProduct.Price)
+            {
+                HistoricProduct backupProduct = existingProduct.Clone();
+                _context.HistoricProduct.Add(new HistoricProduct
+                {
+                    OriginalId = backupProduct.OriginalId,
+                    Brand = backupProduct.Brand,
+                    Model = backupProduct.Model,
+                    Storage = backupProduct.Storage,
+                    Ram = backupProduct.Ram,
+                    Description = backupProduct.Description,
+                    Price = product.Price,
+                    Image = backupProduct.Image,
+                    InStock = backupProduct.InStock,
+                    IsActive = backupProduct.IsActive,
+                    RegistrationDate = backupProduct.RegistrationDate,
+                });
             }
 
             existingProduct.Brand = product.Brand;

@@ -7980,19 +7980,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\matia\\.nuget\\packages\\": {}
+    "C:\\Users\\Tobias\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matia\\Desktop\\LAB4\\New folder\\API-TrabajoPractico-Prog\\UnitTesting\\UnitTesting.csproj",
+      "projectUniqueName": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\UnitTesting\\UnitTesting.csproj",
       "projectName": "UnitTesting",
-      "projectPath": "C:\\Users\\matia\\Desktop\\LAB4\\New folder\\API-TrabajoPractico-Prog\\UnitTesting\\UnitTesting.csproj",
-      "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matia\\Desktop\\LAB4\\New folder\\API-TrabajoPractico-Prog\\UnitTesting\\obj\\",
+      "projectPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\UnitTesting\\UnitTesting.csproj",
+      "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\UnitTesting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tobias\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8006,14 +8006,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\matia\\Desktop\\LAB4\\New folder\\API-TrabajoPractico-Prog\\API-TrabajoPractico\\API-TrabajoPractico.csproj": {
-              "projectPath": "C:\\Users\\matia\\Desktop\\LAB4\\New folder\\API-TrabajoPractico-Prog\\API-TrabajoPractico\\API-TrabajoPractico.csproj"
+            "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\API-TrabajoPractico\\API-TrabajoPractico.csproj": {
+              "projectPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\API-TrabajoPractico\\API-TrabajoPractico.csproj"
             },
-            "C:\\Users\\matia\\Desktop\\LAB4\\New folder\\API-TrabajoPractico-Prog\\Modelo\\Modelo.csproj": {
-              "projectPath": "C:\\Users\\matia\\Desktop\\LAB4\\New folder\\API-TrabajoPractico-Prog\\Modelo\\Modelo.csproj"
+            "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\Modelo\\Modelo.csproj": {
+              "projectPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\Modelo\\Modelo.csproj"
             },
-            "C:\\Users\\matia\\Desktop\\LAB4\\New folder\\API-TrabajoPractico-Prog\\Servicio\\Servicio.csproj": {
-              "projectPath": "C:\\Users\\matia\\Desktop\\LAB4\\New folder\\API-TrabajoPractico-Prog\\Servicio\\Servicio.csproj"
+            "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\Servicio\\Servicio.csproj": {
+              "projectPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\Servicio\\Servicio.csproj"
             }
           }
         }
@@ -8073,7 +8073,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }
