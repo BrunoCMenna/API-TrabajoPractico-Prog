@@ -6686,11 +6686,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\Modelo\\Modelo.csproj",
+      "projectUniqueName": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\Modelo\\Modelo.csproj",
       "projectName": "Modelo",
-      "projectPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\Modelo\\Modelo.csproj",
+      "projectPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\Modelo\\Modelo.csproj",
       "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\Modelo\\obj\\",
+      "outputPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\Modelo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Tobias\\AppData\\Roaming\\NuGet\\NuGet.Config",

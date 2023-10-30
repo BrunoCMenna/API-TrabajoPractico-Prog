@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dujMMYNJMI8Kbf5/ujSeewCb5iww2L+A3PMd2tcSWb5qk4QibI0gSxDxI3N21kuey3VfClCxYVSfXy2X3Hma8A==",
+  "dgSpecHash": "rGauiC2QWoujn0nl2gkvXVvTFXSwVlhnH9FmlbNgilZPkG/R7RKjOZgaHD2f9g2F8NVEHiA9D7WmmTPmEnCwBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\Servicio\\Servicio.csproj",
+  "projectFilePath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\Servicio\\Servicio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tobias\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",

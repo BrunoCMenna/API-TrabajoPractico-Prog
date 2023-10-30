@@ -75,6 +75,29 @@ namespace Servicio.Services
             return topProducts;
         }
 
+        public List<HistoricProductDTO> GetHistoricProducts()
+        {
+            var historicProductList = _context.HistoricProduct
+            .Select(p => new HistoricProductDTO
+            {
+                Id = p.Id,
+                OriginalId = p.OriginalId,
+                Brand = p.Brand,
+                Model = p.Model,
+                Storage = p.Storage,
+                Ram = p.Ram,
+                Description = p.Description,
+                Price = p.Price,
+                Image = p.Image,
+                InStock = p.InStock,
+                IsActive = p.IsActive,
+                RegistrationDate = p.RegistrationDate
+            })
+            .ToList();
+
+            return historicProductList;
+        }
+
         public ProductDTO AddNewProduct(ProductViewModel product)
         {
 

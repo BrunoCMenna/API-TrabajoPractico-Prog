@@ -7985,11 +7985,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\UnitTesting\\UnitTesting.csproj",
+      "projectUniqueName": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\UnitTesting\\UnitTesting.csproj",
       "projectName": "UnitTesting",
-      "projectPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\UnitTesting\\UnitTesting.csproj",
+      "projectPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\UnitTesting\\UnitTesting.csproj",
       "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\UnitTesting\\obj\\",
+      "outputPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\UnitTesting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Tobias\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8006,14 +8006,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\API-TrabajoPractico\\API-TrabajoPractico.csproj": {
-              "projectPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\API-TrabajoPractico\\API-TrabajoPractico.csproj"
+            "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\API-TrabajoPractico\\API-TrabajoPractico.csproj": {
+              "projectPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\API-TrabajoPractico\\API-TrabajoPractico.csproj"
             },
-            "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\Modelo\\Modelo.csproj": {
-              "projectPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\Modelo\\Modelo.csproj"
+            "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\Modelo\\Modelo.csproj": {
+              "projectPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\Modelo\\Modelo.csproj"
             },
-            "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\Servicio\\Servicio.csproj": {
-              "projectPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\Servicio\\Servicio.csproj"
+            "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\Servicio\\Servicio.csproj": {
+              "projectPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\Servicio\\Servicio.csproj"
             }
           }
         }

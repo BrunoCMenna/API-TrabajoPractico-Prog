@@ -70,6 +70,20 @@ namespace API_TrabajoPractico.Controllers
             }
         }
 
+        [HttpGet("GetHistoricProducts")]
+        public ActionResult<List<TopProductsDTO>> GetHistoricProducts()
+        {
+            try
+            {
+                var response = _service.GetHistoricProducts();
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"{ex.Message}");
+            }
+        }
+
         [HttpPost("AddNewProduct"), Authorize(Roles = "admin")]
         public ActionResult<ProductDTO> AddNewProduct([FromBody] ProductViewModel product)
         {

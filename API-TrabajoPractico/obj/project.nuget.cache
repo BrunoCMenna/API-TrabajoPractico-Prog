@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X1uffhoALYXDp1HtGpTEJplwcOkya/IqxaIXa/2015AkfCx8wACWpslpv0P5WDH4Iuo+znxJWLhVb5tOKLz8ig==",
+  "dgSpecHash": "ivlixYOH10oJmGLlz7Z3uV6WY8rd9P1Zf+MIYMCeDqfPEuhoOpMdSeTHuH4DXsv6gezYf0OB4Z9iDypYKATmww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico-Prog\\API-TrabajoPractico\\API-TrabajoPractico.csproj",
+  "projectFilePath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\API-TrabajoPractico\\API-TrabajoPractico.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tobias\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",

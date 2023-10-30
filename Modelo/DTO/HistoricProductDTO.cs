@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Modelo.DTO
 {
-    public class ProductDTO
+    public class HistoricProductDTO
     {
         public int Id { get; set; }
+        public int OriginalId { get; set; }
         public string Brand { get; set; }
         public string Model { get; set; }
         public int Storage { get; set; }
@@ -18,5 +19,6 @@ namespace Modelo.DTO
         public string Image { get; set; }
         public int InStock { get; set; }
         public bool IsActive { get; set; }
+        public string RegistrationDate { get; set; }
     }
 }
