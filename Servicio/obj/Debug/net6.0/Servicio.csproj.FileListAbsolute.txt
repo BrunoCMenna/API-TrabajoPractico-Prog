@@ -148,3 +148,8 @@ C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\r
 C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.pdb
 C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.genruntimeconfig.cache
 C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\ref\Servicio.dll
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\bin\Debug\net6.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\bin\Debug\net6.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\bin\Debug\net6.0\xunit.runner.utility.netcoreapp10.dll
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\bin\Debug\net6.0\Servicio.runtimeconfig.json
+C:\Facultad\Programacion III\API-TrabajoPractico\Servicio\obj\Debug\net6.0\Servicio.genruntimeconfig.cache

@@ -128,3 +128,6 @@ C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Modelo\obj\Debug\net6.0\ref
 C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Modelo\obj\Debug\net6.0\Modelo.pdb
 C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Modelo\obj\Debug\net6.0\Modelo.genruntimeconfig.cache
 C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Modelo\obj\Debug\net6.0\ref\Modelo.dll
+C:\Facultad\Programacion III\API-TrabajoPractico\Modelo\bin\Debug\net6.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Facultad\Programacion III\API-TrabajoPractico\Modelo\bin\Debug\net6.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Facultad\Programacion III\API-TrabajoPractico\Modelo\bin\Debug\net6.0\xunit.runner.utility.netcoreapp10.dll

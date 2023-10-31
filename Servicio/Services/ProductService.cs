@@ -178,6 +178,7 @@ namespace Servicio.Services
             existingProduct.Price = product.Price;
             existingProduct.InStock = product.InStock;
             existingProduct.IsActive = product.IsActive;
+            existingProduct.Image = product.Image;
             _context.SaveChanges();
 
             return _mapper.Map<ProductDTO>(_context.Product.Where(w => w.Id == id).First());
