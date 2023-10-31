@@ -66,7 +66,8 @@ namespace Servicio.Services
                     Ram = p.Ram,
                     Description = p.Description,
                     Price = p.Price,
-                    TotalQuantity = tp.TotalQuantity
+                    TotalQuantity = tp.TotalQuantity,
+                    Image = p.Image
                 })
                 .OrderByDescending(tp => tp.TotalQuantity)
                 .Take(3)
