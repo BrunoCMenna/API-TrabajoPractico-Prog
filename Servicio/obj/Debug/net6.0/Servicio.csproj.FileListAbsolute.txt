@@ -128,3 +128,23 @@ C:\Users\matia\Desktop\LAB4\New folder (3)\API-TrabajoPractico-Prog\Servicio\obj
 C:\Users\matia\Desktop\LAB4\New folder (3)\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.pdb
 C:\Users\matia\Desktop\LAB4\New folder (3)\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.genruntimeconfig.cache
 C:\Users\matia\Desktop\LAB4\New folder (3)\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\ref\Servicio.dll
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\bin\Debug\net6.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\bin\Debug\net6.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\bin\Debug\net6.0\xunit.runner.utility.netcoreapp10.dll
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\bin\Debug\net6.0\Servicio.deps.json
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\bin\Debug\net6.0\Servicio.runtimeconfig.json
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\bin\Debug\net6.0\Servicio.dll
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\bin\Debug\net6.0\Servicio.pdb
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\bin\Debug\net6.0\Modelo.dll
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\bin\Debug\net6.0\Modelo.pdb
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.csproj.AssemblyReference.cache
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.AssemblyInfoInputs.cache
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.AssemblyInfo.cs
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.csproj.CoreCompileInputs.cache
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.csproj.CopyComplete
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.dll
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\refint\Servicio.dll
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.pdb
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\Servicio.genruntimeconfig.cache
+C:\Users\matia\Desktop\LAB4\API-TrabajoPractico-Prog\Servicio\obj\Debug\net6.0\ref\Servicio.dll

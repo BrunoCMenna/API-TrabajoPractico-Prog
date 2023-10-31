@@ -40,8 +40,21 @@ namespace Servicio.Services
             {
                 throw new Exception($"User ID {orderVM.UserId} not found.");
             }
+            foreach (var item in orderVM.OrderItems)
+            {
+                var product = _context.Product.Where(w => w.Id == item.ProductId).FirstOrDefault();
+                if (product == null)
+                {
+                    throw new Exception($"Product ID {item.ProductId} not found.");
+                }
 
-            Order newOrder = new Order
+                if (product.InStock < item.Quantity)
+                {
+                    throw new Exception($"Not enough stock available for Product ID {item.ProductId}.");
+                }
+            }
+
+                Order newOrder = new Order
             {
                 UserId = orderVM.UserId,
                 Phone = orderVM.Phone,
@@ -62,15 +75,6 @@ namespace Servicio.Services
             foreach (var item in orderVM.OrderItems)
             {
                 var product = _context.Product.Where(w => w.Id == item.ProductId).FirstOrDefault();
-                if (product == null)
-                {
-                    throw new Exception($"Product ID {item.ProductId} not found.");
-                }
-
-                if (product.InStock < item.Quantity)
-                {
-                    throw new Exception($"Not enough stock available for Product ID {item.ProductId}.");
-                }
 
                 OrderItem orderItem = new OrderItem
                 {
@@ -210,9 +214,9 @@ namespace Servicio.Services
             OrderDTO updatedOrder = GetOrderById(id);
 
             string subject = "Estado de tu pedido";
-            string emailMessage = "Estimado " + existingOrder.NameLastName + "\n" +
-                "El estado de tu pedido con order de compra #" + existingOrder.Id + " fue actualizado a " + existingOrder.OrderStatus + "\n" +
-                "Gracias por su compra";
+            string emailMessage = "Estimado " + existingOrder.NameLastName + ",\n" +
+                "El estado de tu pedido con order de compra #" + existingOrder.Id + " fue actualizado a " + existingOrder.OrderStatus + ".\n" +
+                "Gracias por su compra.";
 
             EmailSender emailSender = new EmailSender();
             emailSender.SendEmail(subject, existingOrder.Email, existingOrder.NameLastName, emailMessage).Wait();
