@@ -67,7 +67,9 @@ namespace Servicio.Services
                     Description = p.Description,
                     Price = p.Price,
                     TotalQuantity = tp.TotalQuantity,
-                    Image = p.Image
+                    Image = p.Image,
+                    inStock = p.InStock,
+                    isActive = p.IsActive,
                 })
                 .OrderByDescending(tp => tp.TotalQuantity)
                 .Take(3)

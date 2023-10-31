@@ -15,6 +15,8 @@ namespace Modelo.DTO
         public int Ram { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
+        public bool isActive { get; set; }
+        public int inStock { get; set; }
         public int TotalQuantity { get; set; }
         public string Image { get; set; }
     }
