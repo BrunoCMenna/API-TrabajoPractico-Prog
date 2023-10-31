@@ -1152,6 +1152,32 @@
           }
         }
       },
+      "SendGrid/9.28.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "starkbank-ecdsa": "[1.3.3, 2.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/SendGrid.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/SendGrid.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "starkbank-ecdsa/1.3.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/StarkbankEcdsa.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/StarkbankEcdsa.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore/6.2.3": {
         "type": "package",
         "dependencies": {
@@ -2697,6 +2723,7 @@
           "AutoMapper": "12.0.1",
           "Modelo": "1.0.0",
           "Moq": "4.20.69",
+          "SendGrid": "9.28.1",
           "xunit": "2.5.3"
         },
         "compile": {
@@ -4213,6 +4240,45 @@
         "lib/netstandard2.0/Scrutor.xml",
         "scrutor.3.3.0.nupkg.sha512",
         "scrutor.nuspec"
+      ]
+    },
+    "SendGrid/9.28.1": {
+      "sha512": "LyIkgjd+svXuQxpqe5pvyOccyUdKcDqwnBNDPjyCngkKeVpXAOTAr3U1DBLWqHEbFHvu2UBFki3SJzDwxvJdfA==",
+      "type": "package",
+      "path": "sendgrid/9.28.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SendGrid.dll",
+        "lib/net40/SendGrid.pdb",
+        "lib/net40/SendGrid.xml",
+        "lib/net452/SendGrid.dll",
+        "lib/net452/SendGrid.pdb",
+        "lib/net452/SendGrid.xml",
+        "lib/netstandard1.3/SendGrid.dll",
+        "lib/netstandard1.3/SendGrid.pdb",
+        "lib/netstandard1.3/SendGrid.xml",
+        "lib/netstandard2.0/SendGrid.dll",
+        "lib/netstandard2.0/SendGrid.pdb",
+        "lib/netstandard2.0/SendGrid.xml",
+        "sendgrid.9.28.1.nupkg.sha512",
+        "sendgrid.nuspec"
+      ]
+    },
+    "starkbank-ecdsa/1.3.3": {
+      "sha512": "OblOaKb1enXn+dSp7tsx9yjwV+/BEKM9jFhshIkZTwCk7LuTFTp+wSon6rFzuPiIiTGtvVWQNUw2slHjGktJog==",
+      "type": "package",
+      "path": "starkbank-ecdsa/1.3.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/StarkbankEcdsa.dll",
+        "lib/net452/StarkbankEcdsa.dll",
+        "lib/netstandard1.3/StarkbankEcdsa.dll",
+        "lib/netstandard2.0/StarkbankEcdsa.dll",
+        "lib/netstandard2.1/StarkbankEcdsa.dll",
+        "starkbank-ecdsa.1.3.3.nupkg.sha512",
+        "starkbank-ecdsa.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore/6.2.3": {
@@ -7980,19 +8046,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tobias\\.nuget\\packages\\": {}
+    "C:\\Users\\matia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\UnitTesting\\UnitTesting.csproj",
+      "projectUniqueName": "C:\\Users\\matia\\Desktop\\New folder (3)\\API-TrabajoPractico-Prog\\UnitTesting\\UnitTesting.csproj",
       "projectName": "UnitTesting",
-      "projectPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\UnitTesting\\UnitTesting.csproj",
-      "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\UnitTesting\\obj\\",
+      "projectPath": "C:\\Users\\matia\\Desktop\\New folder (3)\\API-TrabajoPractico-Prog\\UnitTesting\\UnitTesting.csproj",
+      "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\matia\\Desktop\\New folder (3)\\API-TrabajoPractico-Prog\\UnitTesting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tobias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8006,14 +8072,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\API-TrabajoPractico\\API-TrabajoPractico.csproj": {
-              "projectPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\API-TrabajoPractico\\API-TrabajoPractico.csproj"
+            "C:\\Users\\matia\\Desktop\\New folder (3)\\API-TrabajoPractico-Prog\\API-TrabajoPractico\\API-TrabajoPractico.csproj": {
+              "projectPath": "C:\\Users\\matia\\Desktop\\New folder (3)\\API-TrabajoPractico-Prog\\API-TrabajoPractico\\API-TrabajoPractico.csproj"
             },
-            "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\Modelo\\Modelo.csproj": {
-              "projectPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\Modelo\\Modelo.csproj"
+            "C:\\Users\\matia\\Desktop\\New folder (3)\\API-TrabajoPractico-Prog\\Modelo\\Modelo.csproj": {
+              "projectPath": "C:\\Users\\matia\\Desktop\\New folder (3)\\API-TrabajoPractico-Prog\\Modelo\\Modelo.csproj"
             },
-            "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\Servicio\\Servicio.csproj": {
-              "projectPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\Servicio\\Servicio.csproj"
+            "C:\\Users\\matia\\Desktop\\New folder (3)\\API-TrabajoPractico-Prog\\Servicio\\Servicio.csproj": {
+              "projectPath": "C:\\Users\\matia\\Desktop\\New folder (3)\\API-TrabajoPractico-Prog\\Servicio\\Servicio.csproj"
             }
           }
         }
@@ -8073,7 +8139,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

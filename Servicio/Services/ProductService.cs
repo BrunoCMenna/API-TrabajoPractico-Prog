@@ -180,6 +180,35 @@ namespace Servicio.Services
             return _mapper.Map<ProductDTO>(_context.Product.Where(w => w.Id == id).First());
         }
 
+        public List<TopProductsDTO> GetAllTopProducts()
+        {
+            var productQuantities = _context.OrderItem
+                .GroupBy(oi => oi.ProductId)
+                .Select(g => new
+                {
+                    ProductId = g.Key,
+                    TotalQuantity = g.Sum(oi => oi.Quantity)
+                })
+                .ToList();
+
+            var topProducts = productQuantities
+                .Join(_context.Product, tp => tp.ProductId, p => p.Id, (tp, p) => new TopProductsDTO
+                {
+                    ProductId = p.Id,
+                    Brand = p.Brand,
+                    Model = p.Model,
+                    Storage = p.Storage,
+                    Ram = p.Ram,
+                    Description = p.Description,
+                    Price = p.Price,
+                    TotalQuantity = tp.TotalQuantity
+                })
+                .OrderByDescending(tp => tp.TotalQuantity)
+                .ToList();
+
+            return topProducts;
+        }
+
         public string DeleteProduct(int id)
         {
             var product = _context.Product.FirstOrDefault(p => p.Id == id);
@@ -193,10 +222,6 @@ namespace Servicio.Services
                 return $"Product ID {id} successfully deleted";
 
             }
-
-            
-            
-
            
         }
     }

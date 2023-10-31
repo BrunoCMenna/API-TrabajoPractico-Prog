@@ -18,6 +18,7 @@ using System.Security.Claims;
 using System.Numerics;
 using static System.Net.WebRequestMethods;
 using static System.Net.Mime.MediaTypeNames;
+using Castle.Core.Smtp;
 
 namespace Servicio.Services
 {
@@ -207,6 +208,15 @@ namespace Servicio.Services
             _context.SaveChanges();
 
             OrderDTO updatedOrder = GetOrderById(id);
+
+            string subject = "Estado de tu pedido";
+            string emailMessage = "Estimado " + existingOrder.NameLastName + "\n" +
+                "El estado de tu pedido con order de compra #" + existingOrder.Id + " fue actualizado a " + existingOrder.OrderStatus + "\n" +
+                "Gracias por su compra";
+
+            EmailSender emailSender = new EmailSender();
+            emailSender.SendEmail(subject, existingOrder.Email, existingOrder.NameLastName, emailMessage).Wait();
+
             return updatedOrder;
         }
 

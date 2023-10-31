@@ -17,6 +17,7 @@ namespace Servicio.IServices
         List<HistoricProductDTO> GetHistoricProducts();
         ProductDTO AddNewProduct(ProductViewModel product);
         ProductDTO UpdateProduct(int id, ProductViewModel product);
+        List<TopProductsDTO> GetAllTopProducts();
         string DeleteProduct(int id);
     }
 }

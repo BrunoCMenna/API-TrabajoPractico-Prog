@@ -124,6 +124,20 @@ namespace API_TrabajoPractico.Controllers
             }
         }
 
+        [HttpGet("GetAllTopProducts")]
+        public ActionResult<List<TopProductsDTO>> GetAllTopProducts()
+        {
+            try
+            {
+                var response = _service.GetAllTopProducts();
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"{ex.Message}");
+            }
+        }
+
         [HttpDelete("DeleteProduct/{id}"), Authorize(Roles = "admin")]
         public ActionResult<string> DeleteProduct([FromRoute] int id)
         {

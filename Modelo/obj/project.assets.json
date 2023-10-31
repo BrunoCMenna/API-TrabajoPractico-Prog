@@ -6681,19 +6681,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tobias\\.nuget\\packages\\": {}
+    "C:\\Users\\matia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\Modelo\\Modelo.csproj",
+      "projectUniqueName": "C:\\Users\\matia\\Desktop\\New folder (3)\\API-TrabajoPractico-Prog\\Modelo\\Modelo.csproj",
       "projectName": "Modelo",
-      "projectPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\Modelo\\Modelo.csproj",
-      "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tobias\\Source\\Repos\\API-TrabajoPractico\\Modelo\\obj\\",
+      "projectPath": "C:\\Users\\matia\\Desktop\\New folder (3)\\API-TrabajoPractico-Prog\\Modelo\\Modelo.csproj",
+      "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\matia\\Desktop\\New folder (3)\\API-TrabajoPractico-Prog\\Modelo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tobias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6756,7 +6756,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

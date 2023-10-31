@@ -16,7 +16,7 @@ public class ProductServiceTests
     [Fact]
     public void AddNewProduct_WithValidData_ShouldReturnProductDTO()
     {
-        // Arrange
+        // Verificacion de que el metodo create funciona corectamente utilizando xUnit y InMemory para simular una base de datos de pruebas a base del context
         var options = new DbContextOptionsBuilder<EcommerceContext>()
             .UseInMemoryDatabase(databaseName: "InMemoryDatabase")
             .Options;
@@ -32,15 +32,15 @@ public class ProductServiceTests
                 Ram = 8,
                 Description = "Example Description",
                 Price = 499.99M,
-                // Establece otras propiedades según sea necesario.
+
             };
 
-            // Act
+
             var result = productService.AddNewProduct(productViewModel);
 
-            // Assert
+
             Assert.NotNull(result);
-            // Agrega aserciones para las propiedades de result si es necesario.
+
         }
     }
 }
