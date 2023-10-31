@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MdPsJrfxX79qVK/jnZNNFfP9BJ4/8GZ+smPyq2bFOhPTaljST4CdaFsQkg8sAl3BaBZYqw0ncSSPngbT7Jv6Ew==",
+  "dgSpecHash": "veGAV+KGwYEIBWVljvbGVKrjOBk1qY46Iq99xzYUAaYjgPq51pZTchJqX+cMbl98stMDUpr1tHdx/W/pqHWDhw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\matia\\Desktop\\New folder (3)\\API-TrabajoPractico-Prog\\Modelo\\Modelo.csproj",
+  "projectFilePath": "C:\\Users\\matia\\Desktop\\LAB4\\New folder (3)\\API-TrabajoPractico-Prog\\Modelo\\Modelo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matia\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\matia\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
