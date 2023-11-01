@@ -20,7 +20,7 @@ namespace API_TrabajoPractico.Controllers
             _service = service;
         }
 
-        [HttpPost("CreateOrder")]
+        [HttpPost("CreateOrder"), Authorize]
         public ActionResult CreateOrder([FromBody] OrderViewModel orderDTO)
         {
             try
@@ -59,7 +59,7 @@ namespace API_TrabajoPractico.Controllers
             }
         }
 
-        [HttpGet("GetOrders")] //, Authorize(Roles = "admin")
+        [HttpGet("GetOrders"), Authorize(Roles = "admin,sysadmin")]
         public ActionResult<List<OrderDTO>> GetOrders()
         {
             try
@@ -73,7 +73,7 @@ namespace API_TrabajoPractico.Controllers
             }
         }
 
-        [HttpGet("GetOrderById/{id}"), Authorize(Roles = "admin")]
+        [HttpGet("GetOrderById/{id}"), Authorize(Roles = "admin,sysadmin")]
         public ActionResult<OrderDTO> GetOrderById([FromRoute] int id)
         {
             try
@@ -91,7 +91,7 @@ namespace API_TrabajoPractico.Controllers
             }
         }
 
-        [HttpPut("UpdateOrderStatus/{id}"), Authorize(Roles = "admin")]
+        [HttpPut("UpdateOrderStatus/{id}"), Authorize(Roles = "admin,sysadmin")]
         public ActionResult UpdateOrderStatus([FromRoute] int id ,[FromBody] OrderStatusViewModel status)
         {
             try
@@ -109,7 +109,7 @@ namespace API_TrabajoPractico.Controllers
             }
         }
 
-        [HttpDelete("DeleteOrder/{id}")] //, Authorize(Roles = "admin")
+        [HttpDelete("DeleteOrder/{id}"), Authorize(Roles = "admin,sysadmin")]
         public ActionResult<string> DeleteOrder([FromRoute] int id)
         {
             try

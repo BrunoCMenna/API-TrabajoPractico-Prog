@@ -70,7 +70,7 @@ namespace API_TrabajoPractico.Controllers
             }
         }
 
-        [HttpGet("GetHistoricProducts")]
+        [HttpGet("GetHistoricProducts"), Authorize(Roles = "admin,sysadmin")]
         public ActionResult<List<TopProductsDTO>> GetHistoricProducts()
         {
             try
@@ -84,7 +84,7 @@ namespace API_TrabajoPractico.Controllers
             }
         }
 
-        [HttpPost("AddNewProduct"), Authorize(Roles = "admin")]
+        [HttpPost("AddNewProduct"), Authorize(Roles = "admin,sysadmin")]
         public ActionResult<ProductDTO> AddNewProduct([FromBody] ProductViewModel product)
         {
             try
@@ -102,7 +102,7 @@ namespace API_TrabajoPractico.Controllers
             }
         }
 
-        [HttpPut("UpdateProduct/{id}"), Authorize(Roles = "admin")]
+        [HttpPut("UpdateProduct/{id}"), Authorize(Roles = "admin,sysadmin")]
         public ActionResult<ProductDTO> UpdateProduct(int id, [FromBody] ProductViewModel product)
         {
             try
@@ -138,7 +138,7 @@ namespace API_TrabajoPractico.Controllers
             }
         }
 
-        [HttpDelete("DeleteProduct/{id}"), Authorize(Roles = "admin")]
+        [HttpDelete("DeleteProduct/{id}"), Authorize(Roles = "admin,sysadmin")]
         public ActionResult<string> DeleteProduct([FromRoute] int id)
         {
             try
