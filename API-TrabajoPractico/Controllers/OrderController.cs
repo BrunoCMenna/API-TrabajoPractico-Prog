@@ -6,6 +6,8 @@ using Modelo.Models;
 using Modelo.ViewModels;
 using Servicio.IServices;
 using System.Security.Claims;
+using System.Text.Json.Serialization;
+using System.Text.Json;
 
 namespace API_TrabajoPractico.Controllers
 {
@@ -26,7 +28,15 @@ namespace API_TrabajoPractico.Controllers
             try
             {
                 var response = _service.CreateOrder(orderDTO);
-                return Ok();
+
+                var options = new JsonSerializerOptions
+                {
+                    ReferenceHandler = ReferenceHandler.Preserve,
+                };
+
+                var json = JsonSerializer.Serialize(response, options);
+
+                return Ok(json);
             }
             catch (Exception ex)
             {
